@@ -8,11 +8,11 @@ let provisionalPrice = km * 0.21;
 if(age < 18) {
     let discount = provisionalPrice * 0.2;
     let finalPrice = provisionalPrice - discount;
-    console.log(`Il prezzo del biglietto è di: ${finalPrice}€`)
+    console.log(`Il prezzo del biglietto è di: ${finalPrice.toFixed(2)}€`)
 } else if(age > 65) {
     let discount = provisionalPrice * 0.4;
     let finalPrice = provisionalPrice - discount;
-    console.log(`Il prezzo del biglietto è di: ${finalPrice}€`)
+    console.log(`Il prezzo del biglietto è di: ${finalPrice.toFixed(2)}€`)
 } else {
-    console.log(`Il prezzo del biglietto è di: ${provisionalPrice}€`)
+    console.log(`Il prezzo del biglietto è di: ${provisionalPrice.toFixed(2)}€`)
 }
